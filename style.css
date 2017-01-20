@@ -1,0 +1,45 @@
+.parallax {
+  /* Full height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1{
+  background-image: url('img/utc1.jpg');
+}
+.parallax2{
+  background-image: url('img/utc2.jpg');
+}
+.parallax3{
+  background-image: url('img/utc3.jpg');
+}
+.parallax4{
+  background-image: url('img/utc4.jpg');
+}
+.parallax5{
+  background-image: url('img/utseus1.jpg');
+}
+.parallax6{
+  background-image: url('img/shanghai1.jpg');
+}
+.parallax7{
+  background-image: url('img/gatech1.jpg');
+}
+.parallax8{
+  background-image: url('img/gatech2.jpg');
+}
+.parallax9{
+  background-image: url('img/gatech3.jpg');
+}
+
+.textbox{
+  background-image: url('img/texture.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}

@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="textbox">Lorem Ipsum</div>
-    <div class="parallax parallax1"></div>
-    <div class="textbox">Lorem Ipsum</div>
+    <div class="textbox">Timothee Monceaux</div>
+    <div class="parallax parallax1">
+      <img src="img/favicon.png" id="logo" style="position:relative; top:200px; left:50%"/>
+    </div>
+    <div class="textbox">Formation</div>
     <div class="parallax parallax2"></div>
-    <div class="textbox">Lorem Ipsum</div>
+    <div class="textbox">Experience</div>
     <div class="parallax parallax3"></div>
-    <div class="textbox">Lorem Ipsum</div>
+    <div class="textbox">Personnal Projects</div>
     <div class="parallax parallax4"></div>
-    <div class="textbox">Lorem Ipsum</div>
+    <div class="textbox">Abroad</div>
     <div class="parallax parallax5"></div>
-    <div class="textbox">Lorem Ipsum</div>
-    <div class="parallax parallax6"></div>
-    <div class="textbox">Lorem Ipsum</div>
-    <div class="parallax parallax7"></div>
-    <div class="textbox">Lorem Ipsum</div>
-    <div class="parallax parallax8"></div>
-    <div class="textbox">Lorem Ipsum</div>
-    <div class="parallax parallax9"></div>
-    <div class="textbox">Lorem Ipsum</div>
+    <div class="textbox">About</div>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+      $(window).on('scroll', function() {
+        scrollRatio = 0.2+0.6*$(window).scrollTop()/$(window).height();
+        $('#logo').offset({
+          top:Math.floor($('#logo').parent().offset()['top']+scrollRatio*$('#logo').parent().height()),
+          left:400
+        });
+      });
+    </script>
   </body>
 </html>

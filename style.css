@@ -22,6 +22,12 @@ body {
   background-size: cover;
   z-index: -10;
 }
+.parallax-logo {
+  position: relative;
+  left: 60vw;
+  max-width: 30vw;
+  z-index: inherit;
+}
 .parallax1{
   background-image: url('img/utc.jpg');
 }
@@ -32,10 +38,10 @@ body {
   background-image: url('img/utseus.jpg');
 }
 .parallax4{
-  background-image: url('img/atlanta.jpg');
+  background-image: url('img/ubisoft.jpg');
 }
 .parallax5{
-  background-image: url('img/shanghai.jpg');
+  background-image: url('img/snecma.jpg');
 }
 
 

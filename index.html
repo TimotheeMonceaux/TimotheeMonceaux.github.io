@@ -11,26 +11,25 @@
   <body>
     <div class="textbox">Timothee Monceaux</div>
     <div class="parallax parallax1">
-      <img src="img/favicon.png" id="logo" style="position:relative; top:200px; left:50%"/>
+      <img class="parallax-logo" src="img/utc-logo.jpg"/>
     </div>
     <div class="textbox">Formation</div>
-    <div class="parallax parallax2"></div>
+    <div class="parallax parallax2">
+      <img class="parallax-logo" src="img/gatech-logo.jpg"/>
+    </div>
     <div class="textbox">Experience</div>
-    <div class="parallax parallax3"></div>
+    <div class="parallax parallax3">
+      <img class="parallax-logo" src="img/utseus-logo.jpg"/>
+    </div>
     <div class="textbox">Personnal Projects</div>
-    <div class="parallax parallax4"></div>
+    <div class="parallax parallax4">
+      <img class="parallax-logo" src="img/ubisoft-logo.jpg"/>
+    </div>
     <div class="textbox">Abroad</div>
-    <div class="parallax parallax5"></div>
+    <div class="parallax parallax5">
+      <img class="parallax-logo" src="img/snecma-logo.jpg"/>
+    </div>
     <div class="textbox">About</div>
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-    <script type="text/javascript">
-      $(window).on('scroll', function() {
-        scrollRatio = 0.2+0.6*$(window).scrollTop()/$(window).height();
-        $('#logo').offset({
-          top:Math.floor($('#logo').parent().offset()['top']+scrollRatio*$('#logo').parent().height()),
-          left:400
-        });
-      });
-    </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

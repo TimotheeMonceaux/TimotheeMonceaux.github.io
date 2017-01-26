@@ -37,7 +37,7 @@ function updateParallax(parallax) {
   parallax.logos.forEach(function(logo) {
     if (parallax.scroll > logo.triggerUp && parallax.scroll < logo.triggerDown) {
       logo.hasChanged = true;
-      logo.newValue = Math.floor((parallax.scroll - logo.triggerUp) / logo.triggerZone * logo.parent.height)+'px';
+      logo.newValue = Math.floor((parallax.scroll - logo.triggerUp) / logo.triggerZone * 0.8 * logo.parent.height)+'px';
       changed = true;
     }
   });

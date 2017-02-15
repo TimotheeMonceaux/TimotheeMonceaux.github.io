@@ -3,11 +3,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* The parallax Effect */
 .parallax {
-  /* Full height */
   height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,32 +37,39 @@ body {
   background-image: url('img/snecma.jpg');
 }
 
+/* Each part where actual content can be written is a textbox*/
 .textbox{
   background-image: url('img/texture.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   height: 400px;
   z-index:1;
 }
 
+/* The picture on the first textbox */
 #photo {
+  display: inline-block;
   position: relative;
   left: 10%;
-  height: 100%;
+  max-height: 80%;
   width: 15%;
   padding: 20px;
 }
 
 #photo img {
-  width: 90%;
-  height: auto;
+  height: 90%;
+  max-height: 30vh;
+  width: auto;
   margin-left: auto;
   border: solid 5px white;
   box-shadow: 0px 0px 20px;
 }
 
+/* Name & Diploma */
 #header {
+  display: inline-block;
   text-align: center;
   position: relative;
   width: 50%;

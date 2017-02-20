@@ -44,8 +44,40 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 400px;
+  min-height: 400px;
   z-index:1;
+}
+
+.left {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5vw;
+}
+
+.right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item {
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+
+.date {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5vw;
+  width: 105px;
+}
+
+.itemdata {
+  display: inline-block;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /* The picture on the first textbox */
@@ -70,7 +102,9 @@ body {
 /* Name & Diploma */
 #header {
   display: inline-block;
-  text-align: center;
   position: relative;
+  left: 150px;
+  top: -10%;
   width: 50%;
+  font-size: 130%;
 }

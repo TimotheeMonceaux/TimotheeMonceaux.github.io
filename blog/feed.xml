@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-04-05T23:53:14-04:00</updated><id>http://localhost:4000/blog/</id><title type="html">Timothée Monceaux’s Blog’</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2017/04/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-04-05T19:03:23-04:00</published><updated>2017-04-05T19:03:23-04:00</updated><id>http://localhost:4000/blog/jekyll/update/2017/04/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2017/04/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Generative Adversarial Networks</title><link href="http://localhost:4000/blog/2017/04/05/generative-adversarial-networks.html" rel="alternate" type="text/html" title="Generative Adversarial Networks" /><published>2017-04-05T00:00:00-04:00</published><updated>2017-04-05T00:00:00-04:00</updated><id>http://localhost:4000/blog/2017/04/05/generative-adversarial-networks</id><content type="html" xml:base="http://localhost:4000/blog/2017/04/05/generative-adversarial-networks.html">&lt;h1 id=&quot;about-generative-adversarial-networks&quot;&gt;About Generative Adversarial Networks&lt;/h1&gt;
+
+&lt;p&gt;A &lt;strong&gt;Generative Adversarial Network&lt;/strong&gt; (GAN) is an Unsupervised Learning Algorithm model invented by Google Brain’s Research Scientist &lt;strong&gt;Ian Goodfellow&lt;/strong&gt; in 2014. GANs can be used to learn the distribution of a dataset and generate samples following this distribution. For instance, if we take as input a huge amount of pictures of bedrooms, a GAN would be able to understand by itself what constitutes a bedroom picture and generate completely new pictures representing bedrooms:&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;ressources/gan-samples-1.png&quot; alt=&quot;GAN-generated bedrooms pictures&quot; style=&quot;text-align:center&quot; /&gt;
+&lt;strong&gt;GAN-generated bedrooms picture&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Generative Adversarial Networks are nowadays one of the most trending subject in Deep Learning and are said to have the best results amongst the generative models. They are indeed by design focused on the &lt;em&gt;believability&lt;/em&gt; of generated output. For instance, regarding a generated image, edges will tend to be sharper than by using other methods, for an overall results less blurry and more pleasant to a human being:&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;ressources/believability.jpg&quot; alt=&quot;GAN-generated images are less blurry&quot; style=&quot;text-align:center&quot; /&gt;
+&lt;strong&gt;GAN-generated images are less blurry&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“There are many interesting recent development in deep learning… The most important one, in my opinion, is adversarial training (also called GAN for Generative Adversarial Networks). This, and the variations that are now being proposed is the most interesting idea in the last 10 years in ML, in my opinion.”&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;~Yann LeCun, director of Facebook’s AI Research&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The most commonly used metaphor to describe the internal structure of a Generative Adversarial Network is the &lt;em&gt;policeman&lt;/em&gt; and the &lt;em&gt;counterfeiter&lt;/em&gt;. The counterfeiter produces fake bills while the policeman tries to detect them (differenciate them from the real ones). After training for a while, the counterfeiter produces much better fake bills, but the policeman also got better at detecting them. This metaphor is pretty convenient as a GAN is composed of two entities: a &lt;strong&gt;Generator&lt;/strong&gt;, which generates images, and a &lt;strong&gt;Discriminator&lt;/strong&gt;, which tries to tell the generated images from the real ones. Both these entities are playing a &lt;strong&gt;zero-sum game&lt;/strong&gt; as they learn: the Generator tries to fool the Discriminator by making him believe his generated images are real while the Discriminator tries to have the best predictions possible.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;ressources/overall.jpg&quot; alt=&quot;Overall Structure of a GAN&quot; style=&quot;text-align:center&quot; /&gt;
+&lt;strong&gt;Overall Structure of a GAN&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In practical terms, the two models (G) and (D) coexists in the GAN model, and are trained simultaneously, using an SGD-like algorithm (here &lt;a href=&quot;https://arxiv.org/abs/1412.6980&quot;&gt;Adam optimizer&lt;/a&gt;) and &lt;em&gt;minibatches&lt;/em&gt; (really small samples of data):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the Discriminator (D) receives an input &lt;em&gt;x&lt;/em&gt; and returns his boolean prediction on whether or not this input has been generated by (G). It is often more convenient to output two probabilities &lt;em&gt;[P(x|generated), P(x|real)]&lt;/em&gt;. We can train this model using the actual origin of the input as label.&lt;/li&gt;
+  &lt;li&gt;the Generator (G) takes some random noise as input, and its output has the same shape/format as the actual data. As it tries to &lt;em&gt;fool&lt;/em&gt; the Discriminator, it is trained by sending the generated output to (D) and comparing its predictions to the expected &lt;em&gt;real&lt;/em&gt; label: &lt;em&gt;[P(x|generated)=0, P(x|real)=1]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A training iteration consists in training (D) with a minibatch, then training (G) with another minibatch. Thus, as the number of training iterations increases, (G) and (D) are playing a zero-sum game in which each one tries to outsmart the other.&lt;/p&gt;
+
+&lt;p&gt;Generative Adversarial Networks are not only good at creating images, but can be taught the distribution of basically any &lt;strong&gt;latent space&lt;/strong&gt; (inferred parameters), given enough &lt;em&gt;time&lt;/em&gt; and &lt;em&gt;data&lt;/em&gt;. This means that the model can be applied in a very wide range of problems, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.mit.edu/vondrick/tinyvideo/&quot;&gt;Video classification and prediction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kvfrans.com/static/color.pdf&quot;&gt;Colorize drawings or black and white pictures&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.quora.com/Can-generative-adversarial-networks-be-used-in-sequential-data-in-recurrent-neural-networks-How-effective-would-they-be&quot;&gt;Generate music or speeches&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Maybe later: &lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/40ldq6/generative_adversarial_networks_for_text/&quot;&gt;Generate texts and dialogs&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;a-gan-example-generating-pokémon-using-keras&quot;&gt;A GAN example: Generating Pokémon using Keras&lt;/h1&gt;
+
+&lt;p&gt;In order not for this to stay theorical, I implemented a GAN and trained it over a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pok%C3%A9mon&quot;&gt;Pokémon&lt;/a&gt; Dataset, &lt;a href=&quot;ressources/img.zip&quot;&gt;available here&lt;/a&gt;. The idea was for the generator to be able to generate completely new Pokémon. The code for the whole experiment is &lt;a href=&quot;ressources/project.ipynb&quot;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;imports&quot;&gt;Imports&lt;/h4&gt;
+
+&lt;p&gt;I used python 3.5 and the following packages:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import os, sys
+from scipy.ndimage import imread
+from scipy.misc import imresize
+import numpy
+import matplotlib.pyplot as plt
+import keras
+from IPython import display
+from tqdm import tqdm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;image&quot;&gt;Image&lt;/h4&gt;
+
+&lt;p&gt;The class &lt;strong&gt;Image&lt;/strong&gt; converts a &lt;em&gt;JPG&lt;/em&gt; or &lt;em&gt;PNG&lt;/em&gt; image to a &lt;em&gt;numpy&lt;/em&gt; array, for further computation:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Image:
+    def __init__(self, data=None, path='img/251.png', reshape=None, normalize=True):
+        if data != None:
+            self.data = data
+        else:
+            self.data = imread(path)
+        if reshape != None:
+            self.data = imresize(self.data, reshape)
+        if normalize:
+            if self.data.dtype == 'uint8':
+                self.data = self.data.astype('float32')/255.
+        self.shape = self.data.shape
+    def display(self, show=True):
+        ax = plt.imshow(self.data)
+        plt.xticks([])
+        plt.yticks([])
+        if show:
+            plt.show()
+        return ax
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;dataset&quot;&gt;Dataset&lt;/h4&gt;
+
+&lt;p&gt;The class &lt;strong&gt;Dataset&lt;/strong&gt; loads an entire directory of images and manage the data:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Dataset:
+    def __init__(self, path=&quot;./img/&quot;, shape=(28, 28, 4), limit=None, randomized=True):
+        self.data = [0]
+        self.data += shape
+        self.data = numpy.empty(self.data, dtype='float32')
+        self.shape = shape
+        files = os.listdir(path)
+        if limit != None:
+            if randomized:
+                files = numpy.random.choice(files, limit)
+            else:
+                files = files[:limit]
+        self.length = len(files)
+        for file in files:
+            self.data = numpy.concatenate([self.data, [Image(path=&quot;./img/&quot;+file, reshape=shape).data]], axis=0)
+            sys.stdout.write(&quot;\r {}/{} images processed&quot;.format(self.data.shape[0], self.length))
+            sys.stdout.flush()
+        print(' ')
+    def display(self, limit=10, randomized=True):
+        if randomized:
+            for ix in numpy.random.choice(self.length, limit):
+                Image(self.data[ix]).display()
+    def sample(self, n=10):
+        res = [n]
+        res += self.shape
+        res = numpy.empty(res)
+        i = 0
+        for ix in numpy.random.choice(self.length, n):
+            res[i] = self.data[ix]
+            i+=1
+        return res
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;generator&quot;&gt;Generator&lt;/h4&gt;
+
+&lt;p&gt;The class &lt;strong&gt;Generator&lt;/strong&gt; defines the model (G). In our case, we are using a modified &lt;strong&gt;Deep Convolutional Generative Adversarial Network (DCGAN)&lt;/strong&gt;. The idea is to have several &lt;em&gt;Convolutional Layers&lt;/em&gt; stacked as they are able to understand the underlying representation of images really well:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Generator:
+    def __init__(self, file=None, verbose=False):
+        self.optimizer = keras.optimizers.Adam(lr=1e-3)
+        nch = 200
+        self.input = keras.models.Input(shape=[100])
+        H = keras.layers.Dense(nch*14*14, kernel_initializer='glorot_normal')(self.input)
+        H = keras.layers.BatchNormalization()(H)
+        H = keras.layers.Activation('relu')(H)
+        H = keras.layers.Reshape( [14, 14, nch] )(H)
+        H = keras.layers.UpSampling2D(size=(2, 2))(H)
+        H = keras.layers.Conv2D(int(nch/2), (3, 3), padding='same', kernel_initializer='glorot_uniform')(H)
+        H = keras.layers.BatchNormalization()(H)
+        H = keras.layers.Activation('relu')(H)
+        H = keras.layers.Conv2D(int(nch/4), (3, 3), padding='same', kernel_initializer='glorot_uniform')(H)
+        H = keras.layers.BatchNormalization()(H)
+        H = keras.layers.Activation('relu')(H)
+        H = keras.layers.Conv2D(4, (1, 1), padding='same', kernel_initializer='glorot_uniform')(H)
+        g_V = keras.layers.Activation('sigmoid')(H)
+        self.generator = keras.models.Model(self.input,g_V)
+        self.generator.compile(loss='binary_crossentropy', optimizer=self.optimizer)
+        if file != None:
+            self.generator = keras.models.load_model(file)
+        self.layers = self.generator.layers
+        if verbose:
+            self.generator.summary()
+    def save(self, file='generator.h5'):
+        self.generator.save(file)
+        print('Generator model saved to &quot;{}&quot;'.format(file))
+    def generate_display(self):
+        noise = numpy.random.rand(1, 100)
+        Image(self.generator.predict(noise)[0]).display()
+    def generate(self, n=10):
+        noise = numpy.random.rand(n, 100)
+        return self.generator.predict(noise)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;discriminator&quot;&gt;Discriminator&lt;/h4&gt;
+
+&lt;p&gt;The class &lt;strong&gt;Discriminator&lt;/strong&gt; defines the model (D). This is a simplified reverse-version of (G), which outputs both &lt;em&gt;real&lt;/em&gt; and &lt;em&gt;generated&lt;/em&gt; labels probabilities:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Discriminator:
+    &quot;&quot;&quot;given an image as input, returns [1, 0] if the image is real, and [0, 1] if the image has been generated &quot;&quot;&quot;
+    def __init__(self, file=None, shape=(28, 28, 4), verbose=False):
+        dropout_rate = 0.25
+        self.optimizer = keras.optimizers.Adam(lr=1e-4)
+        self.input = keras.models.Input(shape=shape)
+        H = keras.layers.Conv2D(256, (5, 5), strides=(2, 2), padding = 'same', activation='relu')(self.input)
+        H = keras.layers.LeakyReLU(0.2)(H)
+        H = keras.layers.Dropout(dropout_rate)(H)
+        H = keras.layers.Conv2D(512, (5, 5), strides=(2, 2), padding = 'same', activation='relu')(H)
+        H = keras.layers.LeakyReLU(0.2)(H)
+        H = keras.layers.Dropout(dropout_rate)(H)
+        H = keras.layers.Conv2D(2, (3, 3), padding = 'same', activation='relu')(H)
+        H = keras.layers.Flatten()(H)
+        d_V = keras.layers.Dense(2, activation='softmax')(H)
+        self.discriminator = keras.models.Model(self.input, d_V)
+        self.discriminator.compile(loss='categorical_crossentropy', optimizer=self.optimizer)
+        if file != None:
+            self.discriminator = keras.models.load_model(file)
+        self.layers = self.discriminator.layers
+        if verbose:
+            self.discriminator.summary()
+    def save(self, file='discriminator.h5'):
+        self.discriminator.save(file)
+        print('Discriminator model saved to &quot;{}&quot;'.format(file))
+    def freeze_training(self, _to=False):
+        self.discriminator.trainable = _to
+        for l in self.layers:
+            l.trainable = _to
+    def unfreeze_training(self, _to=True):
+        self.freeze_training(_to)
+    def predict(self, x):
+        return self.discriminator.predict(x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;gan&quot;&gt;GAN&lt;/h4&gt;
+
+&lt;p&gt;The class &lt;strong&gt;GAN&lt;/strong&gt; wraps up both models and handles the training sessions:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class GAN:
+    def __init__(self, shape=(28, 28, 4), dataset=None, generator=None, discriminator=None, pretrain=True, verbose=False):
+        if dataset!=None:
+            self.dataset = dataset
+        else:
+            self.dataset = Dataset(shape=shape)
+        self.generator = Generator(file=generator)
+        self.discriminator = Discriminator(file=discriminator, shape=shape)
+        self.gan = keras.models.Model(self.generator.input, self.discriminator.discriminator(self.generator.generator(self.generator.input)))
+        self.gan.compile(loss='categorical_crossentropy', optimizer=self.generator.optimizer)
+        self.losses = {&quot;d&quot;:[], &quot;g&quot;:[]}
+        if verbose:
+            self.gan.summary()
+        if pretrain:
+            self.pretrain_discriminator()
+            self.print_accuracy()
+    def pretrain_discriminator(self, n_iter=100, sample=32):
+        for i in tqdm(range(n_iter)):
+            # Train discriminator on generated images
+            x = numpy.concatenate([self.generator.generate(sample), self.dataset.sample(sample)], axis=0)
+            y = numpy.concatenate([numpy.array([[0., 1.]]*(sample), dtype='float32'), numpy.array([[1, 0.]]*(sample), dtype='float32')], axis=0)
+            self.discriminator.discriminator.train_on_batch(x, y)
+    def train(self, n_iter=2000, sample=32, plt_freq=25):
+        for i in tqdm(range(n_iter)):
+            # Train discriminator on generated images
+            for j in range(10):
+                x = numpy.concatenate([self.generator.generate(sample), self.dataset.sample(sample)], axis=0)
+                y = numpy.concatenate([numpy.array([[0., 1.]]*(sample), dtype='float32'), numpy.array([[1, 0.]]*(sample), dtype='float32')], axis=0)
+                d_loss  = self.discriminator.discriminator.train_on_batch(x, y)
+            self.losses[&quot;d&quot;].append(d_loss)
+            if d_loss &amp;gt; 1:
+                print(&quot;Retraining Discriminator&quot;)
+                self.pretrain_discriminator()
+            # train Generator-Discriminator stack on input noise to non-generated output class
+            self.discriminator.freeze_training()
+            x = numpy.random.rand(sample, 100)
+            y = numpy.array([[1., 0.]]*(sample), dtype='float32')
+            g_loss = self.gan.train_on_batch(x, y)
+            self.losses[&quot;g&quot;].append(g_loss)
+            self.discriminator.unfreeze_training()
+            # Updates plots
+            if i%plt_freq==plt_freq-1:
+                self.plot_loss()
+                self.plot_gen()
+                self.print_accuracy()
+        return self
+    def save(self, generator='generator.h5', discriminator='discriminator.h5'):
+        self.generator.save(generator)
+        self.discriminator.save(discriminator)
+    def generate_display(self):
+        self.generator.generate_display()
+    def plot_loss(self):
+        display.clear_output(wait=True)
+        display.display(plt.gcf())
+        plt.figure(figsize=(10,8))
+        plt.plot(self.losses[&quot;d&quot;][-100:], label='discriminative loss')
+        plt.plot(self.losses[&quot;g&quot;][-100:], label='generative loss')
+        plt.legend()
+        plt.show()
+    def plot_gen(self, n_ex=16,dim=(4,4), figsize=(10,10)):
+        generated_images = self.generator.generate(n_ex)
+        plt.figure(figsize=figsize)
+        for i in range(n_ex):
+            plt.subplot(dim[0],dim[1],i+1)
+            plt.imshow(generated_images[i])
+            plt.axis('off')
+        plt.tight_layout()
+        plt.show()
+    def print_accuracy(self):
+        d_real = self.discriminator.predict(self.dataset.sample(100)).mean(axis=0)
+        print(&quot;Mean label attributed by the Discriminator to Real Data: [{:.4f}, {:.4f}]&quot;.format(d_real[0], d_real[1]))
+        d_gen = self.discriminator.predict(self.generator.generate(100)).mean(axis=0)
+        print(&quot;Mean label attributed by the Discriminator to Generated Data: [{:.4f}, {:.4f}]&quot;.format(d_gen[0], d_gen[1]))
+        return self
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+
+&lt;p&gt;Once every class is loaded, the whole GAN can be run by calling the method &lt;code class=&quot;highlighter-rouge&quot;&gt;GAN().train()&lt;/code&gt;, that will train the model for 2000 iterations while prompting generated images regularly.&lt;/p&gt;
+
+&lt;p&gt;As I didn’t have the computing power (&lt;em&gt;time + memory&lt;/em&gt;) to handle the 96x96 pictures from the original dataset, I chose to resize the images to a more reasonable shape of 28x28. Even though images would be too small to show detail, this example allows us to note that the GAN understood the overall representation of the Pokémon images.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;ressources/res_real.jpg&quot; alt=&quot;Reshaped Images from the real Data&quot; style=&quot;text-align:center&quot; /&gt;
+&lt;strong&gt;Reshaped Images from the real Data&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After training the GAN for ~2000 iterations, I obtained the following results:&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;ressources/res_generated.jpg&quot; alt=&quot;Generated Images&quot; style=&quot;text-align:center&quot; /&gt;
+&lt;strong&gt;Generated Images&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The results are very positive, as the GAN obviously managed to understand that a Pokémon is a shape of color in the middle of a white canvas. Given enough time and computers, it would be really intersting to run the model (maybe add a Convolution layer?) on the original dataset, for more iterations.&lt;/p&gt;
+
+&lt;p&gt;I did encounter a lot of issues along the way though, and I can easily say that GANs are not easy to tune. It happens really often that one model learns much faster that the other, leading the optimization function to a &lt;em&gt;local optima&lt;/em&gt;, freezing the overall progression. While building a GAN, we need to make sure that both models are progressing relatively at the same speed, using their learning rate and the size of the minibatches for instance.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1406.2661&quot;&gt;Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio. Generative Adversarial Networks, 2014&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1701.00160&quot;&gt;Ian Goodfellow. NIPS 2016 Tutorial: Generative Adversarial Networks. NIPS, 2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/&quot;&gt;John Glover, An introduction to Generative Adversarial Networks (with code in TensorFlow), blog.aylien.com, 2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1511.06434&quot;&gt;Alec, Radford, Luke Metz, Soumith Chintala. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1412.6980&quot;&gt;Diederik P. Kingma, Jimmy Ba. Adam: A Method for Stochastic Optimization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.mit.edu/vondrick/tinyvideo/&quot;&gt;Carl Vondrick, Hamed Pirsiavash and Antonio Torralba. Learning sound representations from unlabeled video. NIPS, 2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kvfrans.com/static/color.pdf&quot;&gt;Kevin Frans. Outline Colorization through Tandem Adversarial Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Timothée Monceaux</name></author><summary type="html">About Generative Adversarial Networks A Generative Adversarial Network (GAN) is an Unsupervised Learning Algorithm model invented by Google Brain’s Research Scientist Ian Goodfellow in 2014. GANs can be used to learn the distribution of a dataset and generate samples following this distribution. For instance, if we take as input a huge amount of pictures of bedrooms, a GAN would be able to understand by itself what constitutes a bedroom picture and generate completely new pictures representing bedrooms: GAN-generated bedrooms picture Generative Adversarial Networks are nowadays one of the most trending subject in Deep Learning and are said to have the best results amongst the generative models. They are indeed by design focused on the believability of generated output. For instance, regarding a generated image, edges will tend to be sharper than by using other methods, for an overall results less blurry and more pleasant to a human being: GAN-generated images are less blurry “There are many interesting recent development in deep learning… The most important one, in my opinion, is adversarial training (also called GAN for Generative Adversarial Networks). This, and the variations that are now being proposed is the most interesting idea in the last 10 years in ML, in my opinion.” ~Yann LeCun, director of Facebook’s AI Research The most commonly used metaphor to describe the internal structure of a Generative Adversarial Network is the policeman and the counterfeiter. The counterfeiter produces fake bills while the policeman tries to detect them (differenciate them from the real ones). After training for a while, the counterfeiter produces much better fake bills, but the policeman also got better at detecting them. This metaphor is pretty convenient as a GAN is composed of two entities: a Generator, which generates images, and a Discriminator, which tries to tell the generated images from the real ones. Both these entities are playing a zero-sum game as they learn: the Generator tries to fool the Discriminator by making him believe his generated images are real while the Discriminator tries to have the best predictions possible. Overall Structure of a GAN In practical terms, the two models (G) and (D) coexists in the GAN model, and are trained simultaneously, using an SGD-like algorithm (here Adam optimizer) and minibatches (really small samples of data): the Discriminator (D) receives an input x and returns his boolean prediction on whether or not this input has been generated by (G). It is often more convenient to output two probabilities [P(x|generated), P(x|real)]. We can train this model using the actual origin of the input as label. the Generator (G) takes some random noise as input, and its output has the same shape/format as the actual data. As it tries to fool the Discriminator, it is trained by sending the generated output to (D) and comparing its predictions to the expected real label: [P(x|generated)=0, P(x|real)=1] A training iteration consists in training (D) with a minibatch, then training (G) with another minibatch. Thus, as the number of training iterations increases, (G) and (D) are playing a zero-sum game in which each one tries to outsmart the other. Generative Adversarial Networks are not only good at creating images, but can be taught the distribution of basically any latent space (inferred parameters), given enough time and data. This means that the model can be applied in a very wide range of problems, such as: Video classification and prediction Colorize drawings or black and white pictures Generate music or speeches Maybe later: Generate texts and dialogs? A GAN example: Generating Pokémon using Keras In order not for this to stay theorical, I implemented a GAN and trained it over a Pokémon Dataset, available here. The idea was for the generator to be able to generate completely new Pokémon. The code for the whole experiment is available here. Imports I used python 3.5 and the following packages: import os, sys from scipy.ndimage import imread from scipy.misc import imresize import numpy import matplotlib.pyplot as plt import keras from IPython import display from tqdm import tqdm Image The class Image converts a JPG or PNG image to a numpy array, for further computation: class Image: def __init__(self, data=None, path='img/251.png', reshape=None, normalize=True): if data != None: self.data = data else: self.data = imread(path) if reshape != None: self.data = imresize(self.data, reshape) if normalize: if self.data.dtype == 'uint8': self.data = self.data.astype('float32')/255. self.shape = self.data.shape def display(self, show=True): ax = plt.imshow(self.data) plt.xticks([]) plt.yticks([]) if show: plt.show() return ax Dataset The class Dataset loads an entire directory of images and manage the data: class Dataset: def __init__(self, path=&quot;./img/&quot;, shape=(28, 28, 4), limit=None, randomized=True): self.data = [0] self.data += shape self.data = numpy.empty(self.data, dtype='float32') self.shape = shape files = os.listdir(path) if limit != None: if randomized: files = numpy.random.choice(files, limit) else: files = files[:limit] self.length = len(files) for file in files: self.data = numpy.concatenate([self.data, [Image(path=&quot;./img/&quot;+file, reshape=shape).data]], axis=0) sys.stdout.write(&quot;\r {}/{} images processed&quot;.format(self.data.shape[0], self.length)) sys.stdout.flush() print(' ') def display(self, limit=10, randomized=True): if randomized: for ix in numpy.random.choice(self.length, limit): Image(self.data[ix]).display() def sample(self, n=10): res = [n] res += self.shape res = numpy.empty(res) i = 0 for ix in numpy.random.choice(self.length, n): res[i] = self.data[ix] i+=1 return res Generator The class Generator defines the model (G). In our case, we are using a modified Deep Convolutional Generative Adversarial Network (DCGAN). The idea is to have several Convolutional Layers stacked as they are able to understand the underlying representation of images really well: class Generator: def __init__(self, file=None, verbose=False): self.optimizer = keras.optimizers.Adam(lr=1e-3) nch = 200 self.input = keras.models.Input(shape=[100]) H = keras.layers.Dense(nch*14*14, kernel_initializer='glorot_normal')(self.input) H = keras.layers.BatchNormalization()(H) H = keras.layers.Activation('relu')(H) H = keras.layers.Reshape( [14, 14, nch] )(H) H = keras.layers.UpSampling2D(size=(2, 2))(H) H = keras.layers.Conv2D(int(nch/2), (3, 3), padding='same', kernel_initializer='glorot_uniform')(H) H = keras.layers.BatchNormalization()(H) H = keras.layers.Activation('relu')(H) H = keras.layers.Conv2D(int(nch/4), (3, 3), padding='same', kernel_initializer='glorot_uniform')(H) H = keras.layers.BatchNormalization()(H) H = keras.layers.Activation('relu')(H) H = keras.layers.Conv2D(4, (1, 1), padding='same', kernel_initializer='glorot_uniform')(H) g_V = keras.layers.Activation('sigmoid')(H) self.generator = keras.models.Model(self.input,g_V) self.generator.compile(loss='binary_crossentropy', optimizer=self.optimizer) if file != None: self.generator = keras.models.load_model(file) self.layers = self.generator.layers if verbose: self.generator.summary() def save(self, file='generator.h5'): self.generator.save(file) print('Generator model saved to &quot;{}&quot;'.format(file)) def generate_display(self): noise = numpy.random.rand(1, 100) Image(self.generator.predict(noise)[0]).display() def generate(self, n=10): noise = numpy.random.rand(n, 100) return self.generator.predict(noise) Discriminator The class Discriminator defines the model (D). This is a simplified reverse-version of (G), which outputs both real and generated labels probabilities: class Discriminator: &quot;&quot;&quot;given an image as input, returns [1, 0] if the image is real, and [0, 1] if the image has been generated &quot;&quot;&quot; def __init__(self, file=None, shape=(28, 28, 4), verbose=False): dropout_rate = 0.25 self.optimizer = keras.optimizers.Adam(lr=1e-4) self.input = keras.models.Input(shape=shape) H = keras.layers.Conv2D(256, (5, 5), strides=(2, 2), padding = 'same', activation='relu')(self.input) H = keras.layers.LeakyReLU(0.2)(H) H = keras.layers.Dropout(dropout_rate)(H) H = keras.layers.Conv2D(512, (5, 5), strides=(2, 2), padding = 'same', activation='relu')(H) H = keras.layers.LeakyReLU(0.2)(H) H = keras.layers.Dropout(dropout_rate)(H) H = keras.layers.Conv2D(2, (3, 3), padding = 'same', activation='relu')(H) H = keras.layers.Flatten()(H) d_V = keras.layers.Dense(2, activation='softmax')(H) self.discriminator = keras.models.Model(self.input, d_V) self.discriminator.compile(loss='categorical_crossentropy', optimizer=self.optimizer) if file != None: self.discriminator = keras.models.load_model(file) self.layers = self.discriminator.layers if verbose: self.discriminator.summary() def save(self, file='discriminator.h5'): self.discriminator.save(file) print('Discriminator model saved to &quot;{}&quot;'.format(file)) def freeze_training(self, _to=False): self.discriminator.trainable = _to for l in self.layers: l.trainable = _to def unfreeze_training(self, _to=True): self.freeze_training(_to) def predict(self, x): return self.discriminator.predict(x) GAN The class GAN wraps up both models and handles the training sessions: class GAN: def __init__(self, shape=(28, 28, 4), dataset=None, generator=None, discriminator=None, pretrain=True, verbose=False): if dataset!=None: self.dataset = dataset else: self.dataset = Dataset(shape=shape) self.generator = Generator(file=generator) self.discriminator = Discriminator(file=discriminator, shape=shape) self.gan = keras.models.Model(self.generator.input, self.discriminator.discriminator(self.generator.generator(self.generator.input))) self.gan.compile(loss='categorical_crossentropy', optimizer=self.generator.optimizer) self.losses = {&quot;d&quot;:[], &quot;g&quot;:[]} if verbose: self.gan.summary() if pretrain: self.pretrain_discriminator() self.print_accuracy() def pretrain_discriminator(self, n_iter=100, sample=32): for i in tqdm(range(n_iter)): # Train discriminator on generated images x = numpy.concatenate([self.generator.generate(sample), self.dataset.sample(sample)], axis=0) y = numpy.concatenate([numpy.array([[0., 1.]]*(sample), dtype='float32'), numpy.array([[1, 0.]]*(sample), dtype='float32')], axis=0) self.discriminator.discriminator.train_on_batch(x, y) def train(self, n_iter=2000, sample=32, plt_freq=25): for i in tqdm(range(n_iter)): # Train discriminator on generated images for j in range(10): x = numpy.concatenate([self.generator.generate(sample), self.dataset.sample(sample)], axis=0) y = numpy.concatenate([numpy.array([[0., 1.]]*(sample), dtype='float32'), numpy.array([[1, 0.]]*(sample), dtype='float32')], axis=0) d_loss = self.discriminator.discriminator.train_on_batch(x, y) self.losses[&quot;d&quot;].append(d_loss) if d_loss &amp;gt; 1: print(&quot;Retraining Discriminator&quot;) self.pretrain_discriminator() # train Generator-Discriminator stack on input noise to non-generated output class self.discriminator.freeze_training() x = numpy.random.rand(sample, 100) y = numpy.array([[1., 0.]]*(sample), dtype='float32') g_loss = self.gan.train_on_batch(x, y) self.losses[&quot;g&quot;].append(g_loss) self.discriminator.unfreeze_training() # Updates plots if i%plt_freq==plt_freq-1: self.plot_loss() self.plot_gen() self.print_accuracy() return self def save(self, generator='generator.h5', discriminator='discriminator.h5'): self.generator.save(generator) self.discriminator.save(discriminator) def generate_display(self): self.generator.generate_display() def plot_loss(self): display.clear_output(wait=True) display.display(plt.gcf()) plt.figure(figsize=(10,8)) plt.plot(self.losses[&quot;d&quot;][-100:], label='discriminative loss') plt.plot(self.losses[&quot;g&quot;][-100:], label='generative loss') plt.legend() plt.show() def plot_gen(self, n_ex=16,dim=(4,4), figsize=(10,10)): generated_images = self.generator.generate(n_ex) plt.figure(figsize=figsize) for i in range(n_ex): plt.subplot(dim[0],dim[1],i+1) plt.imshow(generated_images[i]) plt.axis('off') plt.tight_layout() plt.show() def print_accuracy(self): d_real = self.discriminator.predict(self.dataset.sample(100)).mean(axis=0) print(&quot;Mean label attributed by the Discriminator to Real Data: [{:.4f}, {:.4f}]&quot;.format(d_real[0], d_real[1])) d_gen = self.discriminator.predict(self.generator.generate(100)).mean(axis=0) print(&quot;Mean label attributed by the Discriminator to Generated Data: [{:.4f}, {:.4f}]&quot;.format(d_gen[0], d_gen[1])) return self Results Once every class is loaded, the whole GAN can be run by calling the method GAN().train(), that will train the model for 2000 iterations while prompting generated images regularly. As I didn’t have the computing power (time + memory) to handle the 96x96 pictures from the original dataset, I chose to resize the images to a more reasonable shape of 28x28. Even though images would be too small to show detail, this example allows us to note that the GAN understood the overall representation of the Pokémon images. Reshaped Images from the real Data After training the GAN for ~2000 iterations, I obtained the following results: Generated Images The results are very positive, as the GAN obviously managed to understand that a Pokémon is a shape of color in the middle of a white canvas. Given enough time and computers, it would be really intersting to run the model (maybe add a Convolution layer?) on the original dataset, for more iterations. I did encounter a lot of issues along the way though, and I can easily say that GANs are not easy to tune. It happens really often that one model learns much faster that the other, leading the optimization function to a local optima, freezing the overall progression. While building a GAN, we need to make sure that both models are progressing relatively at the same speed, using their learning rate and the size of the minibatches for instance. References Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio. Generative Adversarial Networks, 2014 Ian Goodfellow. NIPS 2016 Tutorial: Generative Adversarial Networks. NIPS, 2016 John Glover, An introduction to Generative Adversarial Networks (with code in TensorFlow), blog.aylien.com, 2016 Alec, Radford, Luke Metz, Soumith Chintala. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks Diederik P. Kingma, Jimmy Ba. Adam: A Method for Stochastic Optimization Carl Vondrick, Hamed Pirsiavash and Antonio Torralba. Learning sound representations from unlabeled video. NIPS, 2016 Kevin Frans. Outline Colorization through Tandem Adversarial Networks</summary></entry></feed>

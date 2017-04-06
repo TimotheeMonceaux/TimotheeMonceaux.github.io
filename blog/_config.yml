@@ -17,8 +17,8 @@ title: Timothée Monceaux's Blog
 email: timothee.monceaux@gatech.edu
 description: > # this means to ignore newlines until "baseurl:"
   Timothée Monceaux's Blog, powered by Jekyll.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://timothee.monceaux.me" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://timothee.monceaux.me/blog/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  TimotheeMonceaux
 
